@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+string name;
+char gender;
+
+cout<<"Kindly Enter Your Name:- ";
+getline(cin,name);
+
+cout<<"Kindly Enter Your Gender:- ";
+cin>>gender;
+    
+    switch(gender)
+    {
+        case 'M': cout<<"Welcome to the Coding World Mr. "<<name;
+        break;
+
+        case 'F': cout<<"Welcome to the Coding World Mrs. "<<name;
+        break;
+
+        default: cout<<"Error occured! Invalid Gender!";
+        break;        
+    }
+
+return 0;
+}
